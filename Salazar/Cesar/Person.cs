@@ -23,7 +23,7 @@ namespace Cesar
         }
 
         public void Spend(double save) {
-            _savemoney += save; 
+            _savemoney -= save; 
         }
         public void ChangeName(string name) {
             _name = name; 
