@@ -47,5 +47,24 @@ namespace PruebasUnitarias
             Assert.AreEqual(valoresperado, valorobtenido);
 
         }
+        [TestMethod]
+        public void PruebaMetodoNombre()
+        {
+            ///Organizar
+
+            Person person = new Person("Cesar", 100);
+            string valoresperado = "Andres"; //Nombre esperado
+
+            ///Actuar
+
+            person.ChangeName("Andres");
+            string valorobtenido = person.Name; //Nombre obtenido
+
+            ///Afirmar
+
+            //Comprobando los valores
+            Assert.AreEqual(valoresperado, valorobtenido);
+
+        }
     }
 }

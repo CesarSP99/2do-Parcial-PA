@@ -6,8 +6,8 @@ namespace Cesar
     {
 
         private string _name; 
-        private double _savemoney; 
-        public string Name { get; }
+        private double _savemoney;
+        public string Name { get; set; }
         public double SaveMoney { 
             get { 
                 return _savemoney; 
@@ -26,7 +26,7 @@ namespace Cesar
             _savemoney -= save; 
         }
         public void ChangeName(string name) {
-            _name = name; 
+           Name = name; 
         }
 
     }
